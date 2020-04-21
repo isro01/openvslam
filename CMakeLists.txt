@@ -79,9 +79,10 @@ find_package(Eigen3 3.3 REQUIRED)
 find_package(yaml-cpp REQUIRED)
 
 # OpenCV
-find_package(OpenCV 3.3.1 QUIET
+find_package(OpenCV 3.4.0 REQUIRED
              COMPONENTS
-             core imgcodecs videoio features2d calib3d highgui)
+             core imgcodecs videoio features2d calib3d highgui
+             PATHS /home/isro/petcat_ws/src/PETcat_localization/opencv-3.4.0/build)
 if(NOT OpenCV_FOUND)
     find_package(OpenCV 4.0 REQUIRED
                  COMPONENTS

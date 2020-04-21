@@ -54,7 +54,7 @@ void mono_tracking(const std::shared_ptr<openvslam::config>& cfg, const std::str
     image_transport::ImageTransport it(nh);
 
     // run the SLAM as subscriber
-    image_transport::Subscriber sub = it.subscribe("camera/image_raw", 1, [&](const sensor_msgs::ImageConstPtr& msg) {
+    image_transport::Subscriber sub = it.subscribe("iris/camera_red_iris/image_raw", 1, [&](const sensor_msgs::ImageConstPtr& msg) {
         const auto tp_1 = std::chrono::steady_clock::now();
         const auto timestamp = std::chrono::duration_cast<std::chrono::duration<double>>(tp_1 - tp_0).count();
 

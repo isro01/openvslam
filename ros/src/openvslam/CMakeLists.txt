@@ -137,7 +137,9 @@ find_package(Threads REQUIRED)
 find_library(OpenVSLAM_LIB openvslam HINTS ${OpenVSLAM_LIB_DIR})
 
 # OpenCV
-find_package(OpenCV 3.3.1 QUIET)
+find_package(OpenCV 3.4.0 REQUIRED
+             
+             PATHS /home/isro/petcat_ws/src/PETcat_localization/opencv-3.4.0/build)
 if(NOT OpenCV_FOUND)
     find_package(OpenCV 4.0)
     if(NOT OpenCV_FOUND)

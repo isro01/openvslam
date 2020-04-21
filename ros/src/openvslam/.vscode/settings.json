@@ -1,0 +1,11 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/isro/petcat_ws/src/PETcat_localization/openvslam/ros/devel/lib/python2.7/dist-packages",
+        "/home/isro/petcat_ws/devel/lib/python2.7/dist-packages",
+        "/home/isro/test_ws/devel/lib/python2.7/dist-packages",
+        "/home/isro/line_ws/devel/lib/python2.7/dist-packages",
+        "/home/isro/ros_ws/devel/lib/python2.7/dist-packages",
+        "/home/isro/tutorial_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/melodic/lib/python2.7/dist-packages"
+    ]
+}
